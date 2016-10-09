@@ -22,7 +22,7 @@ angular.module('myApp', ['ngMaterial', 'nzTour'])
         },
         {
             target: '#action-buttons',
-            content: 'Interact with the car using the action buttons',
+            content: 'Interact with the card using the action buttons',
         }]
     }
 
