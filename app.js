@@ -26,10 +26,14 @@ angular.module('myApp', ['ngMaterial', 'nzTour'])
         }]
     }
 
-    nzTour.start(tourConfig).then(function() {
+    this.startTour = function(){
+        nzTour.start(tourConfig).then(function() { //start tour
         console.log('Tour Finished!');
-    })
-    .catch(function() {
-        console.log('Tour Aborted!')
-    });
+        })
+        .catch(function() {
+            console.log('Tour Aborted!')
+        });
+    }
+
+    this.startTour();
 }]);
